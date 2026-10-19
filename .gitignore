@@ -1,0 +1,57 @@
+# ---- 编译产物 ----
+*.o
+*.d
+*.a
+*.so
+*.so.*
+*.lo
+*.la
+
+# ---- 可执行文件 ----
+kvserver
+kvserver-glibc
+kvserver-mi
+kvslave
+bench_mempool
+bench_mempool-glibc
+benchmark_multi
+benchmark_pipe
+insert10w
+insert5w_1
+insert5w_2
+verify10w
+slave_verify10w
+rdma_recv
+rdma_send
+rdma_file_recv
+rdma_file_send
+sf_recv
+sf_send
+mq_send
+ebpf_monitor
+ebpf_proxy
+test_mem
+
+# ---- eBPF 生成物 ----
+vmlinux.h
+*.skel.h
+*.bpf.o
+
+# ---- 运行数据 ----
+*.aof
+*.aof.*
+*.rdb
+*.log
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+.fuse_hidden*
+
+# ---- 本地不进仓库的内容 ----
+cd.txt
+测试数据.md
+压测/
+用不到的/
